@@ -69,6 +69,8 @@ p{
   height: 100vh;
   width: 100%;
   background:var(--header-bg),url(../img/header_bg.png) no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
    background-size: cover;
    display: flex;
    flex-direction: column;
@@ -148,7 +150,7 @@ p{
   height: 40rem; 
 }
 .bottom_sec .right_sec img{
-   width:83%;  
+   width:81%;  
    margin: 0 auto;
    display: block;
    /* position:absolute;
