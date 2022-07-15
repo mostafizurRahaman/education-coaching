@@ -20,6 +20,8 @@ body{
    --btn-color:#fcce2d;
    --black-color:#000000;
    --menu-bg:#e8e8fa;
+   --text-color1:#7d7d7d;
+   --small-textcolor:#a6a6a6;
 }
 .flexible{
    display: flex;
@@ -47,9 +49,20 @@ h1{
 h2{
    font-size: 4rem;
    color: var(--black-color);
+   text-align: center;
+}
+h4{
+   font-size:2rem ;
+   font-weight: 700;
+   font-family: "Helvetica",sans-serif;
 }
 p{
    font-size: 1.7rem;
+   line-height: 1.7em;
+}
+.little_description{
+   margin-bottom: 8rem;
+   text-align: center;
 }
 .btn{
    padding: 0.8rem 2rem;
@@ -63,7 +76,9 @@ p{
    -ms-border-radius: 2rem;
    -o-border-radius: 2rem;
 }
-
+.half_width{
+   width: 48%;
+}
 /* headre section style here  */
 #header{
   height: 100vh;
@@ -272,4 +287,59 @@ h1{
       z-index: 2;
       text-transform: capitalize;
       
+}
+
+/* news section style added */
+#news_section{
+   padding:2rem 0rem 6rem;
+}
+.news_wrraper{
+   justify-content: space-between;
+   align-items: center;
+}
+.news_wrraper .left_sec .our_news{
+ width: 90%;
+ border: 1px solid var(--black-color);
+ padding: 3rem;
+ border-top-left-radius: 3rem;
+ border-bottom-right-radius: 3rem;
+ transition:1s all ease ;
+ -webkit-transition:1s all ease ;
+ -moz-transition:1s all ease ;
+ -ms-transition:1s all ease ;
+ -o-transition:1s all ease ;
+}
+.news_wrraper .left_sec .our_news:hover{
+   background:rgb(251, 201, 0);  
+   border: 2px dashed var(--black-color);  
+   border-top-left-radius: 0rem;
+ border-bottom-right-radius: 0rem;
+ border-top-right-radius: 3rem;
+ border-bottom-left-radius: 3rem;
+}
+.news_wrraper .our_news p > small{
+  color: var(--small-textcolor);
+  text-transform: capitalize;
+  font-weight: 700;
+  
+}
+.news_wrraper .our_news p{
+   color:var(--text-color1); 
+   margin-bottom: 1.5rem;
+   text-align: justify;
+
+}
+.our_news:hover > p,
+.our_news:hover > p > small{
+   color: var(--black-color);
+}
+
+.news_feature{
+   position: relative;
+}
+.news_feature .main_img{
+width: 100%;
+
+}
+.news_feature  .addition_img{ width: 6rem; height: 6rem; position: absolute; left: 0; top: 50%; transform:translate(-50%,-50%) ; -webkit-transform:translate(-50%,-50%) ; -moz-transform:translate(-50%,-50%) ; -ms-transform:translate(-50%,-50%) ; -o-transform:translate(-50%,-50%) ;
 }
