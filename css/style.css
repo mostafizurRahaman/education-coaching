@@ -145,8 +145,7 @@ p{
 }
 .bottom_sec{
   justify-content: space-around;
-  height: 40rem;
-  
+  height: 40rem; 
 }
 .bottom_sec .right_sec img{
    width:83%;  
