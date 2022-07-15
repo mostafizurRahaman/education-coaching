@@ -141,21 +141,25 @@ p{
    text-shadow:1px 1px var(--black-color) ;
 }
 .bottom_sec{
-   justify-content: center;
-   align-items: center;
+   justify-content: space-around;
+    align-items: flex-end;  
+  height: 40rem;
+   
 
 }
-.bottom_sec img{
- width: 87%;
-
+.bottom_sec .right_sec img{
+   width: 400px;
+   height: 400px;
 
 }
 .bottom_sec .hero_area{
    width: 48%;
+  align-items: center;
+
 }
 .bottom_sec .right_sec{
    width: 48%;
-   
+   align-self: flex-end;   
 }
 h1{
    color: var(--white-color);
