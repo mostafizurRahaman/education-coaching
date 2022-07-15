@@ -41,6 +41,10 @@ h1{
    font-size: 5.5rem;
    
 }
+h2{
+   font-size: 4rem;
+   color: var(--black-color);
+}
 p{
    font-size: 1.7rem;
 }
@@ -141,7 +145,7 @@ p{
 
 }
 .bottom_sec img{
-   width: 97%;
+    width: 97%;
 
 }
 .bottom_sec .hero_area{
@@ -149,14 +153,109 @@ p{
 }
 .bottom_sec .right_sec{
    width: 48%;
+   
 }
 h1{
    color: var(--white-color);
 }
+
 .bottom_sec p{
    color: var(--white-color);
    font-size: 1.7rem;
 }
 .hero_btn2{
    background: var(--black-color);
+}
+
+/* course section styles start */
+#course_sec{
+   padding: 6rem 0rem;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 4rem;
+}
+#course_sec h2::after{
+  content: "";
+  display: block;
+  width: 6rem;
+  height: 2rem;
+  background: var(--btn-color);
+  margin: 0 auto;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  margin-top: 1rem;
+}
+.yeallow_header{
+   color: var(--btn-color);
+}
+#course_sec .course_wrap{
+   flex-wrap: wrap;
+   gap: 3rem;   
+   
+   
+
+}
+
+.course{
+   width:57rem;
+   height:28.6rem ;
+   position: relative;
+   border-radius:10px ;
+   -webkit-border-radius:10px ;
+   -moz-border-radius:10px ;
+   -ms-border-radius:10px ;
+   -o-border-radius:10px ;
+}
+.course::before{
+   content: "";
+   width:57rem;
+   height:28.6rem ;
+   position: absolute;
+   background: var(--black-color);
+   display: block;
+   opacity:0.5;
+   z-index: 1;
+   transition: 0.5s all ease;
+   -webkit-transition: 0.5s all ease;
+   -moz-transition: 0.5s all ease;
+   -ms-transition: 0.5s all ease;
+   -o-transition: 0.5s all ease;
+   border-radius:10px ;
+   -webkit-border-radius:10px ;
+   -moz-border-radius:10px ;
+   -ms-border-radius:10px ;
+   -o-border-radius:10px ;
+}
+.active::before{
+  opacity: 0.8; 
+}
+.course:hover::before{
+   opacity: 0.8;
+}
+#course_sec .box img{
+   border-radius:10px ;
+   -webkit-border-radius:10px ;
+   -moz-border-radius:10px ;
+   -ms-border-radius:10px ;
+   -o-border-radius:10px ;
+} 
+#course_sec .box .caption_image{
+      display: inline-block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
+      -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      -o-transform: translate(-50%,-50%);
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: var(--white-color);
+      z-index: 2;
+      text-transform: capitalize;
+      
 }
